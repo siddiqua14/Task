@@ -1,0 +1,796 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Admin</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <meta content="" name="keywords" />
+    <meta content="" name="description" />
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon" />
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Roboto:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Icon Font Stylesheet -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet" />
+    <link
+      href="lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet" />
+    
+    
+  <body>
+    <div class="container-fluid position-relative d-flex p-0">
+      <!-- Spinner Start -->
+      <div
+        id="spinner"
+        class="show bg-dark position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center"
+      >
+        <div
+          class="spinner-border text-primary"
+          style="width: 3rem; height: 3rem"
+          role="status"
+        >
+          <span class="sr-only">Loading...</span>
+        </div>
+      </div>
+      <!-- Spinner End -->
+
+      <!-- Sidebar Start -->
+      <div class="sidebar pe-4 pb-3">
+        <nav class="navbar bg-secondary navbar-dark">
+          <a href="index.html" class="navbar-brand mx-4 mb-3">
+            <h3 class="text-primary">
+              <i class="fa fa-user-edit me-2"></i>OnSet
+            </h3>
+          </a>
+          <div class="d-flex align-items-center ms-4 mb-4">
+            <div class="position-relative">
+              <img
+                class="rounded-circle"
+                src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-chat/ava2-bg.webp"
+                alt="avatar 1"
+                style="width: 40px; height: 40px"
+              />
+              <div
+                class="bg-success rounded-circle border border-2 border-white position-absolute end-0 bottom-0 p-1"
+              ></div>
+            </div>
+            <div class="ms-3">
+              <h6 class="mb-0">Jhon Doe</h6>
+              <span>Admin</span>
+            </div>
+          </div>
+          <div class="navbar-nav w-100">
+            <a href="index.html" class="nav-item nav-link active "
+              ><i class="fa fa-laptop me-2"></i>Dashboard</a
+            >
+
+            <a href="table.html" class="nav-item nav-link "><i class="fa fa-table me-2"></i>Tables</a>
+
+            
+          </div>
+        </nav>
+      </div>
+      <!-- Sidebar End -->
+
+      <!-- Content Start -->
+      <div class="content">
+        <!-- Navbar Start -->
+        <nav
+          class="navbar navbar-expand bg-secondary navbar-dark sticky-top px-4 py-0"
+        >
+          <a href="index.html" class="navbar-brand d-flex d-lg-none me-4">
+            <h2 class="text-primary mb-0"><i class="fa fa-user-edit"></i></h2>
+          </a>
+          <a href="#" class="sidebar-toggler flex-shrink-0">
+            <i class="fa fa-bars"></i>
+          </a>
+          <form class="d-none d-md-flex ms-4">
+            <input
+              class="form-control bg-dark border-0"
+              type="search"
+              placeholder="Search"
+            />
+          </form>
+          <div class="navbar-nav align-items-center ms-auto">
+           
+            <div class="nav-item dropdown">
+              <a
+                href="#"
+                class="nav-link dropdown-toggle"
+                data-bs-toggle="dropdown"
+              >
+                <i class="fa fa-bell me-lg-2"></i>
+                <span class="d-none d-lg-inline-flex">Notificatin</span>
+              </a>
+              <div
+                class="dropdown-menu dropdown-menu-end bg-secondary border-0 rounded-0 rounded-bottom m-0"
+              >
+                <a href="#" class="dropdown-item">
+                  <h6 class="fw-normal mb-0">Profile updated</h6>
+                  <small>15 minutes ago</small>
+                </a>
+                <hr class="dropdown-divider" />
+                <a href="#" class="dropdown-item">
+                  <h6 class="fw-normal mb-0">New user added</h6>
+                  <small>15 minutes ago</small>
+                </a>
+
+                <hr class="dropdown-divider" />
+                <a href="#" class="dropdown-item text-center"
+                  >See all notifications</a
+                >
+              </div>
+            </div>
+            <div class="nav-item dropdown">
+              <a
+                href="#"
+                class="nav-link dropdown-toggle"
+                data-bs-toggle="dropdown"
+              >
+                <img
+                  class="rounded-circle me-lg-2"
+                  src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-chat/ava2-bg.webp"
+                  alt="avatar 1"
+                  style="width: 40px; height: 40px"
+                />
+                <span class="d-none d-lg-inline-flex">John Doe</span>
+              </a>
+              <div
+                class="dropdown-menu dropdown-menu-end bg-secondary border-0 rounded-0 rounded-bottom m-0"
+              >
+                <a href="newprofile.html" class="dropdown-item">My Profile</a>
+                <a href="#" class="dropdown-item">Settings</a>
+                <a href="#" class="dropdown-item">Log Out</a>
+              </div>
+            </div>
+          </div>
+        </nav>
+        <!-- Navbar End -->
+
+        <!-- progress -->
+
+        <div class="container-fluid pt-4 px-4">
+          <div class="bg-secondary text-center rounded p-4">
+            <div class="d-flex align-items-center justify-content-between mb-4">
+              <h6 class="mb-0">User</h6>
+              <a href="userlist.html">Show All</a>
+            </div>
+
+            <table class="table text-start align-middle table-hover mb-0">
+              <thead>
+                <tr class="text-white">
+                  <th scope="col">User name</th>
+                  <th scope="col">Role</th>
+                  <th scope="col">E-mail</th>
+                </tr>
+              </thead>
+              <tbody>
+                <a href="userinfo.html">
+                  <tr
+                    class="fw-normal"
+                    onclick="window.location.href = 'userinfo.html';"
+                  >
+                    <th>
+                      <img
+                        src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-chat/ava1-bg.webp"
+                        alt="avatar 1"
+                        style="width: 45px; height: auto"
+                      />
+                      <span class="ms-2">Alice Mayer</span>
+                    </th>
+                    <td class="align-middle">
+                      <span>UI Design</span>
+                    </td>
+                    <th scope="col">Email@gmail.com</th>
+                    </tr
+                ></a>
+                <tr
+                  class="fw-normal"
+                  onclick="window.location.href = 'userinfo.html';"
+                >
+                  <th>
+                    <img
+                      src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-chat/ava2-bg.webp"
+                      alt="avatar 1"
+                      style="width: 45px; height: auto"
+                    />
+                    <span class="ms-2">Kate Moss</span>
+                  </th>
+                  <td class="align-middle">Make payment to Bluedart</td>
+
+                  <th scope="col">Email@gmail.com</th>
+                </tr>
+                <tr
+                  class="fw-normal"
+                  onclick="window.location.href = 'userinfo.html';"
+                >
+                  <th>
+                    <img
+                      src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-chat/ava3-bg.webp"
+                      alt="avatar 1"
+                      style="width: 45px; height: auto"
+                    />
+                    <span class="ms-2">Danny McChain</span>
+                  </th>
+                  <td class="align-middle">Sort Entries</td>
+
+                  <th scope="col">Email@gmail.com</th>
+                </tr>
+                <tr
+                  class="fw-normal"
+                  onclick="window.location.href = 'userinfo.html';"
+                >
+                  <th>
+                    <img
+                      src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-chat/ava5-bg.webp"
+                      alt="avatar 1"
+                      style="width: 45px; height: auto"
+                    />
+                    <span class="ms-2">Alexa Chung</span>
+                  </th>
+                  <td class="align-middle">Backend</td>
+
+                  <th scope="col">Email@gmail.com</th>
+                </tr>
+                <tr
+                  class="fw-normal"
+                  onclick="window.location.href = 'userinfo.html';"
+                >
+                  <th class="border-0">
+                    <img
+                      src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-chat/ava6-bg.webp"
+                      alt="avatar 1"
+                      style="width: 45px; height: auto"
+                    />
+                    <span class="ms-2">Ben Smith</span>
+                  </th>
+                  <td class="border-0 align-middle">Ask</td>
+
+                  <th scope="col">Email@gmail.com</th>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <!-- Widgets Start -->
+        <div class="container-fluid pt-4 px-4">
+          <div class="row g-4">
+            <div class="col-sm-12 col-md-6 col-xl-6">
+              <div class="h-100 bg-secondary rounded p-4">
+                <div
+                  class="d-flex align-items-center justify-content-between mb-4"
+                >
+                  <h6 class="mb-0">Calender</h6>
+                  
+                </div>
+                <div id="calender"></div>
+                <div id="demo-add-delete-event"></div>
+
+
+               
+              </div>
+            </div>
+            <div class="col-sm-12 col-md-6 col-xl-6 ">
+              <div class="h-100 bg-secondary rounded p-4">
+                <div
+                  class="d-flex align-items-center justify-content-between mb-4"
+                >
+                  <h6 class="mb-0">To Do List</h6>
+                  <a href="">Show All</a>
+                </div>
+                <div class="d-flex mb-2 header" >
+                  <input
+                    class="form-control bg-dark border-0"
+                    type="text"
+                    id="myInput"
+                    placeholder="Enter task"
+                  />
+                  <span
+                    onclick="newElement()"
+                    type="button"
+                    class="addBtn btn btn-primary ms-2"
+                  >
+                    Add
+                  </span>
+                </div>
+                <div class="d-flex align-items-center border-bottom py-2">
+                  <ul class="todo" id="myUL">
+                    <li class="myli">Hit the gym </li>
+                    <li class="myli checked">Pay bills</li>
+                    <li class="myli">Meet George</li>
+                    <li class="myli">Buy eggs</li>
+                    <li class="myli">Read a book</li>
+                    <li class="myli">Organize office</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+    
+
+        <!-- Footer Start -->
+        <div class="container-fluid pt-4 px-4">
+          <div class="bg-secondary rounded-top p-4">
+            <div class="row">
+              <div class="col-12 col-sm-6 text-center text-sm-start">
+                &copy; <a href="#">OnSet</a>, All Right Reserved.
+              </div>
+              <!--<div class="col-12 col-sm-6 text-center text-sm-end">
+                <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
+              <!--Designed By <a href="https://htmlcodex.com">HTML Codex</a>
+                <br />Distributed By:
+                <a href="https://themewagon.com" target="_blank">ThemeWagon</a>
+              </div>-->
+            </div>
+          </div>
+        </div>
+        <!-- Footer End -->
+      </div>
+      <!-- Content End -->
+
+      <!-- Back to Top -->
+      <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"
+        ><i class="bi bi-arrow-up"></i
+      ></a>
+    </div>
+    <script>
+      // Create a "close" button and append it to each list item
+      var myNodelist = document.getElementsByClassName("myli");
+      var i;
+      for (i = 0; i < myNodelist.length; i++) {
+        var span = document.createElement("SPAN");
+        var txt = document.createTextNode("\u00D7");
+        span.className = "close";
+        span.appendChild(txt);
+        myNodelist[i].appendChild(span);
+      }
+      
+      // Click on a close button to hide the current list item
+      var close = document.getElementsByClassName("close");
+      var i;
+      for (i = 0; i < close.length; i++) {
+        close[i].onclick = function() {
+          var div = this.parentElement;
+          div.style.display = "none";
+        }
+      }
+      
+      // Add a "checked" symbol when clicking on a list item
+      var list = document.querySelector('ul');
+      list.addEventListener('click', function(ev) {
+        if (ev.target.tagName === 'LI') {
+          ev.target.classList.toggle('checked');
+        }
+      }, false);
+      
+      // Create a new list item when clicking on the "Add" button
+      function newElement() {
+        var li = document.createElement("li");
+        var inputValue = document.getElementById("myInput").value;
+        var t = document.createTextNode(inputValue);
+        li.appendChild(t);
+        if (inputValue === '') {
+          alert("You must write something!");
+        } else {
+          document.getElementById("myUL").appendChild(li);
+        }
+        document.getElementById("myInput").value = "";
+      
+        var span = document.createElement("SPAN");
+        var txt = document.createTextNode("\u00D7");
+        span.className = "close";
+        span.appendChild(txt);
+        li.appendChild(span);
+      
+        for (i = 0; i < close.length; i++) {
+          close[i].onclick = function() {
+            var div = this.parentElement;
+            div.style.display = "none";
+          }
+        }
+      }
+      //calender
+      mobiscroll.setOptions({
+    theme: 'ios',
+    themeVariant: 'light'
+});
+
+var oldEvent,
+    tempEvent = {},
+    deleteEvent,
+    restoreEvent,
+    colorPicker,
+    tempColor,
+    titleInput = document.getElementById('event-title'),
+    descriptionTextarea = document.getElementById('event-desc'),
+    allDaySwitch = document.getElementById('event-all-day'),
+    freeSegmented = document.getElementById('event-status-free'),
+    busySegmented = document.getElementById('event-status-busy'),
+    deleteButton = document.getElementById('event-delete'),
+    colorSelect = document.getElementById('event-color-picker'),
+    pickedColor = document.getElementById('event-color'),
+    colorElms = document.querySelectorAll('.crud-color-c'),
+    datePickerResponsive = {
+        medium: {
+            controls: ['calendar'],
+            touchUi: false
+        }
+    },
+    datetimePickerResponsive = {
+        medium: {
+            controls: ['calendar', 'time'],
+            touchUi: false
+        }
+    },
+    myData = [{
+        id: 1,
+        start: '2023-02-08T13:00',
+        end: '2023-02-08T13:45',
+        title: 'Lunch @ Butcher\'s',
+        description: '',
+        allDay: false,
+        free: true,
+        color: '#009788'
+    }, {
+        id: 2,
+        start: '2023-02-08T15:00',
+        end: '2023-02-08T16:00',
+        title: 'General orientation',
+        description: '',
+        allDay: false,
+        free: false,
+        color: '#ff9900'
+    }, {
+        id: 3,
+        start: '2023-02-07T18:00',
+        end: '2023-02-07T22:00',
+        title: 'Dexter BD',
+        description: '',
+        allDay: false,
+        free: true,
+        color: '#3f51b5'
+    }, {
+        id: 4,
+        start: '2023-02-09T10:30',
+        end: '2023-02-09T11:30',
+        title: 'Stakeholder mtg.',
+        description: '',
+        allDay: false,
+        free: false,
+        color: '#f44437'
+    }];
+
+function createAddPopup(elm) {
+    // hide delete button inside add popup
+    deleteButton.style.display = 'none';
+
+    deleteEvent = true;
+    restoreEvent = false;
+
+    // set popup header text and buttons for adding
+    popup.setOptions({
+        headerText: 'New event',
+        buttons: ['cancel', {
+            text: 'Add',
+            keyCode: 'enter',
+            handler: function () {
+                calendar.updateEvent({
+                    id: tempEvent.id,
+                    title: tempEvent.title,
+                    description: tempEvent.description,
+                    allDay: tempEvent.allDay,
+                    start: tempEvent.start,
+                    end: tempEvent.end,
+                    color: tempEvent.color,
+                });
+                // navigate the calendar to the correct view
+                calendar.navigateToEvent(tempEvent);
+                deleteEvent = false;
+                popup.close();
+            },
+            cssClass: 'mbsc-popup-button-primary'
+        }]
+    });
+
+    // fill popup with a new event data
+    mobiscroll.getInst(titleInput).value = tempEvent.title;
+    mobiscroll.getInst(descriptionTextarea).value = '';
+    mobiscroll.getInst(allDaySwitch).checked = true;
+    range.setVal([tempEvent.start, tempEvent.end]);
+    mobiscroll.getInst(busySegmented).checked = true;
+    range.setOptions({ controls: ['date'], responsive: datePickerResponsive });
+    pickedColor.style.background = '';
+
+    // set anchor for the popup
+    popup.setOptions({ anchor: elm });
+
+    popup.open();
+}
+
+function createEditPopup(args) {
+    var ev = args.event;
+
+    // show delete button inside edit popup
+    deleteButton.style.display = 'block';
+
+    deleteEvent = false;
+    restoreEvent = true;
+
+    // set popup header text and buttons for editing
+    popup.setOptions({
+        headerText: 'Edit event',
+        buttons: ['cancel', {
+            text: 'Save',
+            keyCode: 'enter',
+            handler: function () {
+                var date = range.getVal();
+                var eventToSave = {
+                    id: ev.id,
+                    title: titleInput.value,
+                    description: descriptionTextarea.value,
+                    allDay: mobiscroll.getInst(allDaySwitch).checked,
+                    start: date[0],
+                    end: date[1],
+                    free: mobiscroll.getInst(freeSegmented).checked,
+                    color: ev.color,
+                };
+                // update event with the new properties on save button click
+                calendar.updateEvent(eventToSave);
+                // navigate the calendar to the correct view
+                calendar.navigateToEvent(eventToSave);
+                restoreEvent = false;
+                popup.close();
+            },
+            cssClass: 'mbsc-popup-button-primary'
+        }]
+    });
+
+    // fill popup with the selected event data
+    mobiscroll.getInst(titleInput).value = ev.title || '';
+    mobiscroll.getInst(descriptionTextarea).value = ev.description || '';
+    mobiscroll.getInst(allDaySwitch).checked = ev.allDay || false;
+    range.setVal([ev.start, ev.end]);
+    pickedColor.style.background = ev.color || '';
+
+    if (ev.free) {
+        mobiscroll.getInst(freeSegmented).checked = true;
+    } else {
+        mobiscroll.getInst(busySegmented).checked = true;
+    }
+
+    // change range settings based on the allDay
+    range.setOptions({
+        controls: ev.allDay ? ['date'] : ['datetime'],
+        responsive: ev.allDay ? datePickerResponsive : datetimePickerResponsive
+    });
+
+    // set anchor for the popup
+    popup.setOptions({ anchor: args.domEvent.currentTarget });
+    popup.open();
+}
+
+var calendar = mobiscroll.eventcalendar('#demo-add-delete-event', {
+    clickToCreate: 'double',
+    dragToCreate: true,
+    dragToMove: true,
+    dragToResize: true,
+    view: {
+        calendar: { labels: true }
+    },
+    data: myData,
+    onEventClick: function (args) {
+        oldEvent = Object.assign({}, args.event);
+        tempEvent = args.event;
+
+        if (!popup.isVisible()) {
+            createEditPopup(args);
+        }
+    },
+    onEventCreated: function (args) {
+        popup.close();
+        // store temporary event
+        tempEvent = args.event;
+        createAddPopup(args.target);
+    },
+    onEventDeleted: function () {
+        mobiscroll.snackbar({            button: {
+                action: function () {
+                    calendar.addEvent(args.event);
+                },
+                text: 'Undo'
+            },
+            message: 'Event deleted'
+        });
+    }
+});
+
+var popup = mobiscroll.popup('#demo-add-popup', {
+    display: 'bottom',
+    contentPadding: false,
+    fullScreen: true,
+    onClose: function () {
+        if (deleteEvent) {
+            calendar.removeEvent(tempEvent);
+        } else if (restoreEvent) {
+            calendar.updateEvent(oldEvent);
+        }
+    },
+    responsive: {
+        medium: {
+            display: 'anchored',
+            width: 400,
+            fullScreen: false,
+            touchUi: false
+        }
+    }
+});
+
+titleInput.addEventListener('input', function (ev) {
+    // update current event's title
+    tempEvent.title = ev.target.value;
+});
+
+descriptionTextarea.addEventListener('change', function (ev) {
+    // update current event's title
+    tempEvent.description = ev.target.value;
+});
+
+allDaySwitch.addEventListener('change', function () {
+    var checked = this.checked
+    // change range settings based on the allDay
+    range.setOptions({
+        controls: checked ? ['date'] : ['datetime'],
+        responsive: checked ? datePickerResponsive : datetimePickerResponsive
+    });
+
+    // update current event's allDay property
+    tempEvent.allDay = checked;
+});
+
+var range = mobiscroll.datepicker('#event-date', {
+    controls: ['date'],
+    select: 'range',
+    startInput: '#start-input',
+    endInput: '#end-input',
+    showRangeLabels: false,
+    touchUi: true,
+    responsive: datePickerResponsive,
+    onChange: function (args) {
+        var date = args.value;
+        // update event's start date
+        tempEvent.start = date[0];
+        tempEvent.end = date[1];
+    }
+});
+
+document.querySelectorAll('input[name=event-status]').forEach(function (elm) {
+    elm.addEventListener('change', function () {
+        // update current event's free property
+        tempEvent.free = mobiscroll.getInst(freeSegmented).checked;
+    });
+});
+
+deleteButton.addEventListener('click', function () {
+    // delete current event on button click
+    calendar.removeEvent(oldEvent);
+    popup.close();
+
+    // save a local reference to the deleted event
+    var deletedEvent = tempEvent;
+
+    mobiscroll.snackbar({        button: {
+            action: function () {
+                calendar.addEvent(deletedEvent);
+            },
+            text: 'Undo'
+        },
+        message: 'Event deleted'
+    });
+});
+
+colorPicker = mobiscroll.popup('#demo-event-color', {
+    display: 'bottom',
+    contentPadding: false,
+    showArrow: false,
+    showOverlay: false,
+    buttons: [
+        'cancel',
+        {
+            text: 'Set',
+            keyCode: 'enter',
+            handler: function (ev) {
+                setSelectedColor();
+            },
+            cssClass: 'mbsc-popup-button-primary'
+        }
+    ],
+    responsive: {
+        medium: {
+            display: 'anchored',
+            anchor: document.getElementById('event-color-cont'),
+            buttons: {}
+        }
+    }
+});
+
+function selectColor(color, setColor) {
+    var selectedElm = document.querySelector('.crud-color-c.selected');
+    var newSelected = document.querySelector('.crud-color-c[data-value="' + color + '"]');
+
+    if (selectedElm) {
+        selectedElm.classList.remove('selected')
+    }
+    if (newSelected) {
+        newSelected.classList.add('selected')
+    }
+    if (setColor) {
+        pickedColor.style.background = color || '';
+    }
+}
+
+function setSelectedColor() {
+    tempEvent.color = tempColor;
+    pickedColor.style.background = tempColor;
+    colorPicker.close();
+}
+
+colorSelect.addEventListener('click', function () {
+    selectColor(tempEvent.color || '');
+    colorPicker.open();
+});
+
+colorElms.forEach(function (elm) {
+    elm.addEventListener('click', function () {
+        tempColor = elm.getAttribute('data-value');
+        selectColor(tempColor);
+
+        if (!colorPicker.s.buttons.length) {
+            setSelectedColor();
+        }
+    });
+});
+      </script>
+      
+
+    <!-- JavaScript Libraries -->
+    <script src="//cdnjs.cloudflare.com/ajax/libs/moment.js/2.5.1/moment.min.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/chart/chart.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/tempusdominus/js/moment.min.js"></script>
+    <script src="lib/tempusdominus/js/moment-timezone.min.js"></script>
+    <script src="lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+  </body>
+</html>
